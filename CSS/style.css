@@ -116,3 +116,18 @@ body { background-color: var(--white); overflow-x: hidden; color: var(--black); 
     .cta-img-floating { display: none; }
     .border-end-custom { border-right: none; border-bottom: 1px solid white; padding-bottom: 30px !important; margin-bottom: 30px; }
 }
+
+/* Cole isso no fim do seu arquivo style.css */
+@media (max-width: 991px) {
+    .cta-img-floating {
+        display: block !important; /* Força a imagem a aparecer */
+        position: relative !important; /* Tira ela de cima do texto */
+        text-align: center;
+        margin-top: 20px;
+    }
+    .cta-img-floating img {
+        width: 100% !important;
+        max-width: 300px; /* Garante que não fique gigante */
+        height: auto;
+    }
+}
